@@ -28,7 +28,7 @@
             <x-input-error :messages="$errors->get('alamat')" class="mt-2" />
         </div>
 
-        <div class="mt-4">
+        <!-- <div class="mt-4">
             <x-input-label for="jenis_kelamin" :value="__('Jenis Kelamin')" />
             <div class="mt-2 flex items-center space-x-4">
                 <div class="flex items-center">
@@ -44,7 +44,7 @@
                 </div>
             </div>
             <x-input-error :messages="$errors->get('jenis_kelamin')" class="mt-2" />
-        </div>
+        </div> -->
         
 
         <!-- Password -->
@@ -73,7 +73,7 @@
 
         <!-- Profile Photo -->
         <div class="mt-4">
-            <x-input-label for="file" :value="__('Upload File')" />
+            <!-- <x-input-label for="file" :value="__('Upload File')" />
     
             <x-text-input id="file" class="block mt-1 w-full"
                           type="file"
@@ -81,7 +81,7 @@
                           required />
     
             <x-input-error :messages="$errors->get('file')" class="mt-2" />
-        </div>
+        </div> -->
 
         <div class="flex items-center justify-end mt-4">
             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">

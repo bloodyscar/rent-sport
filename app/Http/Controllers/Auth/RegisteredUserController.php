@@ -31,11 +31,11 @@ class RegisteredUserController extends Controller
     {
 
 
-        $request->validate([
-            'file' => 'required|file|mimes:jpg,png,pdf|max:2048', // Validate file type and size
-        ]);
+        // $request->validate([
+        //     'file' => 'required|file|mimes:jpg,png,pdf|max:2048', // Validate file type and size
+        // ]);
 
-        $filePath = $request->file('file')->store('images', 'public');
+        // $filePath = $request->file('file')->store('images', 'public');
 
 
         $request->validate([
@@ -62,8 +62,8 @@ class RegisteredUserController extends Controller
             'phone' => $request->phone,
             'password' => Hash::make($request->password),
             'alamat' => $request->alamat,
-            'gender' => $request->jenis_kelamin,
-            'avatar' => $filePath,
+            // 'gender' => $request->jenis_kelamin,
+            // 'avatar' => $filePath,
         ]);
 
         event(new Registered($user));
