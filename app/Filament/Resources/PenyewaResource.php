@@ -38,11 +38,6 @@ class PenyewaResource extends Resource
                 Forms\Components\TextInput::make('password')
                     ->password()
                     ->required(),
-                Forms\Components\Select::make('gender')
-                    ->options([
-                        'laki' => 'Laki-laki',
-                        'perempuan' => 'Perempuan',
-                    ]),
                 Forms\Components\TextInput::make('alamat'),
 
             ]);
@@ -57,7 +52,6 @@ class PenyewaResource extends Resource
                 Tables\Columns\TextColumn::make('email'),
                 Tables\Columns\TextColumn::make('phone'),
                 Tables\Columns\TextColumn::make('alamat'),
-                Tables\Columns\TextColumn::make('gender'),
             ])
             ->filters([
                 //
